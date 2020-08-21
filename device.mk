@@ -115,6 +115,9 @@ PRODUCT_COPY_FILES += \
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
 
+PRODUCT_PACKAGES += \
+    TetheringConfigOverlay
+
 # Inherit from universal3475-common
 $(call inherit-product, device/samsung/universal3475-common/device-common.mk)
 
