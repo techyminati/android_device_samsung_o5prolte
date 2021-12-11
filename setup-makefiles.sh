@@ -18,7 +18,7 @@
 set -e
 
 VENDOR=samsung
-DEVICE=on5ltetmo
+DEVICE=o5prolte
 
 export INITIAL_COPYRIGHT_YEAR=2016
 
@@ -39,7 +39,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}"
 
 # Copyright headers and guards
-write_headers "on5ltetmo"
+write_headers "o5prolte"
 
 # The standard blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true

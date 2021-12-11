@@ -17,9 +17,7 @@
 # Inherit from universal3475-common
 include device/samsung/universal3475-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/samsung/on5ltetmo
-
-TARGET_OTA_ASSERT_DEVICE := on5lte,on5ltetmo,on5ltemtr
+LOCAL_PATH := device/samsung/o5prolte
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
@@ -39,7 +37,7 @@ BOARD_PROVIDES_LIBRIL := true
 BOARD_NEEDS_ROAMING_PROTOCOL_FIELD := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_on5ltetmo
+TARGET_INIT_VENDOR_LIB := libinit_o5prolte
 
 # Partitions
 BOARD_HAS_NO_MISC_PARTITION:= false
@@ -53,7 +51,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 4261412864
 BOARD_FLASH_BLOCK_SIZE := 4096
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineage-on5ltetmo_defconfig
+TARGET_KERNEL_CONFIG := o5prolte_defconfig
 
 # Shim
 TARGET_LD_SHIM_LIBS += \

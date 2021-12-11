@@ -1,8 +1,8 @@
 cc_library_static {
-    name: "libinit_on5ltetmo",
+    name: "libinit_o5prolte",
     recovery_available: true,
     srcs: [
-        "init_on5ltetmo.cpp",
+        "init_o5prolte.cpp",
     ],
     whole_static_libs: ["libbase"],
     include_dirs: [
