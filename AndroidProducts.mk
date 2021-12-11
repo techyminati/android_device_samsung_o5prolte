@@ -14,12 +14,12 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/on5ltetmo
+LOCAL_PATH := device/samsung/o5prolte
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_PATH)/lineage_on5ltetmo.mk
+    $(LOCAL_PATH)/lineage_o5prolte.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_on5ltetmo-user \
-    lineage_on5ltetmo-userdebug \
-    lineage_on5ltetmo-eng
+    lineage_o5prolte-user \
+    lineage_o5prolte-userdebug \
+    lineage_o5prolte-eng

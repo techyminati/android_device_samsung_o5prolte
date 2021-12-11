@@ -14,9 +14,9 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/on5ltetmo
+LOCAL_PATH := device/samsung/o5prolte
 
-ifneq ($(filter on5ltetmo,$(TARGET_DEVICE)),)
+ifneq ($(filter o5prolte,$(TARGET_DEVICE)),)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 

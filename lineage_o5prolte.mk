@@ -25,16 +25,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := lineage_on5ltetmo
-PRODUCT_DEVICE := on5ltetmo
-PRODUCT_MODEL := SM-G550T
+PRODUCT_NAME := lineage_o5prolte
+PRODUCT_DEVICE := o5prolte
+PRODUCT_MODEL := SM-G550FY
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=on5ltetmo \
-    PRIVATE_BUILD_DESC="on5ltetmo-user 6.0.1 MMB29K G550TUVU2AQC4 release-keys"
+    PRODUCT_NAME=o5prolte \
+    PRIVATE_BUILD_DESC="o5proltedd-user 7.1.1 NMF26X G550FYXXU1CRD1 release-keys"
 
-BUILD_FINGERPRINT=samsung/on5ltetmo/on5ltetmo:6.0.1/MMB29K/G550TUVU2AQC4:user/release-keys
+BUILD_FINGERPRINT := "samsung/o5proltedd/o5prolte:7.1.1/NMF26X/G550FYXXU1CRD1:user/release-keys"
 
