@@ -103,7 +103,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Vendor security patch level (vendor blobs from G550FYXXU1CRF1)
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2018-04-01
+    ro.lineage.build.vendor_security_patch=$(PLATFORM_SECURITY_PATCH)
 
 # Wi-fi
 PRODUCT_COPY_FILES += \
