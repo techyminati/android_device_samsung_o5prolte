@@ -47,6 +47,9 @@ app/mcRegistry/fffffffff0000000000000000000001e.tlbin:vendor/app/mcRegistry/ffff
 lib/libsec-ril.so
 lib/libsec-ril-dsds.so
 
+# Libprotobuf-cpp - from G550FYXXU1CRD1
+lib/libprotobuf-cpp-full-old.so
+
 # Sensors
 lib/hw/sensors.universal7580.so
 lib/libsensorservice.so
