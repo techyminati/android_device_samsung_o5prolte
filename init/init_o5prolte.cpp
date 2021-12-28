@@ -60,6 +60,24 @@ void property_override_dual(char const system_prop[],
     property_override(vendor_prop, value);
 }
 
+void set_sim_info()
+{
+    const char *simslot_count_path = "/proc/simslot_count";
+    std::string simslot_count;
+
+    if (ReadFileToString(simslot_count_path, &simslot_count)) {
+        simslot_count = Trim(simslot_count); // strip newline
+        property_override("ro.multisim.simslotcount", simslot_count.c_str());
+        if (simslot_count.compare("2") == 0) {
+            property_override("rild.libpath2", "/system/lib/libsec-ril-dsds.so");
+            property_override("persist.radio.multisim.config", "dsds");
+        }
+    }
+    else {
+        LOG(ERROR) << "Could not open '" << simslot_count_path << "'\n";
+    }
+}
+
 void vendor_load_properties()
 {
     std::string bootloader = GetProperty("ro.bootloader", "");
